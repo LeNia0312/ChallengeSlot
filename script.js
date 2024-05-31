@@ -1,24 +1,15 @@
+// ボタンイベント発火をフックする
 document.getElementById('generateButton').addEventListener('click', generateRandomStrings);
 
+// テキストを生成する
 function generateRandomStrings() {
-    const boxes = ['box1', 'box2', 'box3'];
-    /*boxes.forEach(box => {
-        document.getElementById(box).textContent = generateRandomString();
-    });*/
 
+    // いつ
     document.getElementById('box1').textContent = GenelateWhenString();
+    // だれと
     document.getElementById('box2').textContent = GenelateWhoString();
+    // どこでなにする
     document.getElementById('box3').textContent = GenelateWhereDoString();
-}
-
-function generateRandomString() {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result = '';
-    const length = 10; // 生成する文字列の長さ
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return result;
 }
 
 /*いつ を生成する*/
