@@ -11,15 +11,44 @@ body {
     text-align: center;
 }
 
-.box {
-    width: 200px;
-    height: 100px;
-    margin: 10px auto;
-    border: 1px solid #000;
+h1 {
+    margin-bottom: 20px;
+}
+
+/*文字列を生成するボックスを含むその行のアイテムを管理するクラス*/
+.box-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    margin: 10px 0;
+}
+
+/*生成するボタン*/
+.genelate_button{
+    border: none; /* 枠線をなくす */
+    border-radius: 5px; /* 角丸をつける */
+    width: 300px;
+    height: 50px;
+    background-color: #2e2e4d;
+    color: white;
+}
+
+.label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/*文字列を生成するボックス*/
+.box {
+    border: none; /* 枠線をなくす */
+    border-radius: 5px; /* 角丸をつける */
+    width: 300px;
+    height: 50px;
+    border: 1px solid #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
     background-color: #f0f0f0;
 }
 
@@ -28,4 +57,9 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+/*ロゴ*/
+.img_main_logo{
+    zoom: 30%;
 }
